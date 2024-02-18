@@ -19,7 +19,7 @@ const MainComponent = (props) => {
         const data = await response.json();
         setArtist(data);
       } else {
-        throw new Error("Errore nella chiamata");
+        throw new Error("There was an error in the fetch");
       }
     } catch (error) {
       console.log(error);
